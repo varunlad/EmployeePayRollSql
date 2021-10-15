@@ -25,6 +25,10 @@ select * from employee_payRoll;
 Select * from employee_payRoll where Name='LEO MESSI';
 --Cast and Now Query
 select * from employee_payRoll where StartDate between cast('2021-01-01' as date) and GETDATE();
+--UC6 update
+alter table  employee_payRoll add Gender char(1);
+update employee_payRoll set BasicPay=(Salary-Deduction-TaxablePay) ;
+
 
 
 
