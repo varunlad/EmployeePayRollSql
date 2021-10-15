@@ -21,6 +21,10 @@ Delete from employee_payRoll where name='XAVI';
 Delete from employee_payRoll where ID=9;
 --UC4 Display Entire table
 select * from employee_payRoll;
+--UC5 where condition
+Select * from employee_payRoll where Name='LEO MESSI';
+--Cast and Now Query
+select * from employee_payRoll where StartDate between cast('2021-01-01' as date) and GETDATE();
 
 
 
