@@ -36,6 +36,11 @@ select AVG(Salary) as AverageSalary,Gender from employee_payRoll group by Gender
 select MAX(Salary) as MaximumSalary,Gender from employee_payRoll group by Gender;
 select MIN(Salary) as MinimumSalary,Gender from employee_payRoll group by Gender;
 select * from employee_payRoll;
+--UC8
+alter table employee_payRoll add Emp_Phone_no bigint ;
+alter table employee_payRoll add Department varchar(50) not null default 'HR' ;
+update employee_payRoll set Department='IT' where ID=5 ;
+alter table employee_payRoll add Address varchar(100) default 'Mumbai';
 
 
 
