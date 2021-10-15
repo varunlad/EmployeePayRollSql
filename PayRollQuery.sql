@@ -47,6 +47,10 @@ alter table  employee_payRoll add Deduction bigint;
 alter table  employee_payRoll add TaxablePay bigint;
 update employee_payRoll set Emp_Phone_no='8430912379' where ID=8;
 select * from employee_payRoll;
+--UC10
+INSERT INTO employee_payRoll (Name,Salary,StartDate,Gender,Emp_phone_no,Department,Address,BasicPay,Deduction,TaxablePAY)
+ VALUES ('Terissa','123424.12','2011-08-13','F','8908765456','Marketing','Pune','812213','90000','1600');
+
 
 
 
