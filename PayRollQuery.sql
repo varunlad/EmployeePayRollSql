@@ -25,9 +25,17 @@ select * from employee_payRoll;
 Select * from employee_payRoll where Name='LEO MESSI';
 --Cast and Now Query
 select * from employee_payRoll where StartDate between cast('2021-01-01' as date) and GETDATE();
---UC6 update
+--UC6
+select * from employee_payRoll where StartDate between ('2021-01-01') and GETDATE();
+update employee_payRoll set Salary='212442' where ID=8;
 alter table  employee_payRoll add Gender char(1);
 update employee_payRoll set BasicPay=(Salary-Deduction-TaxablePay) ;
+--UC7
+select SUM(Salary) as TotalSalary,Gender from employee_payRoll group by Gender;
+select AVG(Salary) as AverageSalary,Gender from employee_payRoll group by Gender;
+select MAX(Salary) as MaximumSalary,Gender from employee_payRoll group by Gender;
+select MIN(Salary) as MinimumSalary,Gender from employee_payRoll group by Gender;
+select * from employee_payRoll;
 
 
 
