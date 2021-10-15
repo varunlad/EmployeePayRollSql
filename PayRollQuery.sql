@@ -19,6 +19,8 @@ INSERT INTO employee_payRoll (Name,Salary,StartDate,Gender,Emp_phone_no,Departme
  --Does not delete Metadata 
 Delete from employee_payRoll where name='XAVI';
 Delete from employee_payRoll where ID=9;
+--UC4 Display Entire table
+select * from employee_payRoll;
 
 
 
