@@ -41,7 +41,12 @@ alter table employee_payRoll add Emp_Phone_no bigint ;
 alter table employee_payRoll add Department varchar(50) not null default 'HR' ;
 update employee_payRoll set Department='IT' where ID=5 ;
 alter table employee_payRoll add Address varchar(100) default 'Mumbai';
-
+--UC9
+alter table  employee_payRoll add BasicPay bigint;
+alter table  employee_payRoll add Deduction bigint;
+alter table  employee_payRoll add TaxablePay bigint;
+update employee_payRoll set Emp_Phone_no='8430912379' where ID=8;
+select * from employee_payRoll;
 
 
 
